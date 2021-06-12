@@ -1,6 +1,5 @@
 ---
 title: '七层OSI'
-sidebar: 'auto'
 ---
 
 ## OSI 七层模型
