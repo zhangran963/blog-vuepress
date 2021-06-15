@@ -1,3 +1,8 @@
+---
+title: '缓存'
+---
+
+
 [教程地址](https://www.cnblogs.com/shixiaomiao1122/p/7591556.html)  
 [MDN Cache-Control](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Cache-Control)  
 
@@ -7,7 +12,12 @@
 
 ![缓存文件头部](https://tva1.sinaimg.cn/large/006y8mN6gy1g7ltv0vhb9j30qa0d8dgg.jpg)
 
+## 缓存
+
 * Date 请求此文件时的(服务器)时间; 
+
+### 强制缓存
+* 按规则, 若未过期, 不用请求;
 * Expires (服务器)指明文件过期时间(http1.0 标准, 优先级低); 
 * Cache-Control 使用相对时间(http1.1 标准, 优先级高); 
 
@@ -19,6 +29,8 @@
   + s-maxage: 只用于共享缓存, 如 CDN; 
   + must-revalidate: 如果页面过期, 则去服务器获取; 
 
+### 协商缓存
+* 发送网络请求;
 * Last-Modified(服务器返回) <=> If-Modified-Since(下次, 浏览器请求)
 
   1. Last-Modified: 请求文件时, 服务器标识的 `文件最后修改时间`; 
@@ -34,6 +46,7 @@
   + 优先级: Etag > Last-Modified; 先判断 Etag, 一致后再对比 Last-Modified; 
   + Last-Modified 的精确度只到秒级, 如果一秒内多次修改, 会有判断不准确的情况; 
   + 有的文件是定期自动生成的(实际内容不变), Last-Modified 会修改, 但 Etag 不会变; 
+
 # 继续看
 
  `https://www.cnblogs.com/shixiaomiao1122/p/7591556.html`
