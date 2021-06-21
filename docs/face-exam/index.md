@@ -23,16 +23,13 @@ footer: MIT Licensed | Copyright © 2021-present ran
 1. React和Vue的区别 
 2. generator async promise取消
 3. Node事件循环
-4. 原型链实现方式
-5. 从Vue源码中, 学到了
-6. babel
-7. BOM 和 DOM
 
 ## 项目
 
 useWatch, useComponentDidMount, 多项选择器用到算法
 难点: 因页面卡住, 用本地服务器; 
 
-
 ## 
 优缺点
+* 责任心
+* 偏向于完美主义, 对于细节上, 会过多花精力优化

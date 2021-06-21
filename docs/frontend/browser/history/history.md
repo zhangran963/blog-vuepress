@@ -57,7 +57,6 @@ window.addEventListener('popstate', function(event) {
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
-
 ```
 
 

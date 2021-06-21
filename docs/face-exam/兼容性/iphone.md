@@ -14,7 +14,8 @@ title: 'iPhone'
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, viewport-fit=cover" />
 ```
 
-* `safe-area-inset-top`, `safe-area-inset-bottom`, `safe-area-inset-left`, `safe-area-inset-right`,  `safe-area-inset-*` 分别代表边缘的危险区域;
+* `safe-area-inset-top`, `safe-area-inset-bottom`, `safe-area-inset-left`, `safe-area-inset-right`,  `safe-area-inset-*` 分别代表边缘的危险区域; 
+
 ```css
 padding-bottom: constant(safe-area-inset-bottom);
 /* 兼容 iOS<11.2 */
